@@ -1,0 +1,66 @@
+@tailwind base;
+
+/* Your own custom base styles */
+
+a {
+	color: rgb(30 58 138);
+}
+
+dd, li {
+	margin-left: 1.5rem;
+}
+
+dl dt:not(:first-of-type){
+	margin-top: 1.5rem;
+}
+
+dt {
+	font-weight: 600;
+}
+
+.bg-hero {
+	background-image: url('../../public/media/island-bg.jpg');
+}
+
+.bg-fixed {
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.divider-getting-here { background-image: url('../../public/media/getting-here.jpg'); }
+.divider-transportation { background-image: url('../../public/media/transportation.jpg'); }
+.divider-lodging { background-image: url('../../public/media/lodging.jpg'); }
+.divider-food { background-image: url('../../public/media/food.jpg'); }
+.divider-entertainment { background-image: url('../../public/media/entertainment.jpg'); }
+.divider-sightseeing { background-image: url('../../public/media/sightseeing.jpg'); }
+
+.stripes {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	background: linear-gradient(rgb(245 158 11) 33%, white 33%, white 66%, rgb(14 116 144) 66%);
+	opacity: 0.8;
+	rotate: 115deg;
+}
+
+.font-shadow {
+	text-shadow: 0 4px rgba(0, 0, 0, 0.6);
+}
+
+:root {
+	scroll-behavior: smooth;
+	animation-fill-mode: both;
+	--fade-delay: 0ms;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Your own custom component styles */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
